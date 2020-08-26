@@ -5,10 +5,7 @@ apply plugin: 'com.google.gms.google-services'
 android {
     signingConfigs {
         release {
-            storeFile file('D:\\keystore\\Learningscape.jks')
-            storePassword 'Iwanttodie'
-            keyAlias 'key0'
-            keyPassword 'Iwanttodie'
+           
         }
     }
     compileSdkVersion 29
