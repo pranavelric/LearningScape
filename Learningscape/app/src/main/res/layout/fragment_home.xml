@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    tools:context=".fragment.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            card_view:cardCornerRadius="10dp"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:rippleColor="@color/colorAccent"
+            card_view:strokeColor="@color/colorPrimaryDark"
+            card_view:strokeWidth="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/splash_bg"
+              >
+<ImageView
+android:id="@+id/sampimg"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    card_view:layout_constraintBottom_toTopOf="@id/samp"
+    android:background="@drawable/note"
+    />
+                <TextView
+                    android:padding="16dp"
+                    android:id="@+id/samp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/playfair"
+                    android:text="Sample Papers"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                   card_view:layout_constraintTop_toBottomOf="@+id/sampimg"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            card_view:cardCornerRadius="10dp"
+            card_view:layout_constraintTop_toBottomOf="@id/categories"
+            card_view:rippleColor="@color/colorAccent"
+            card_view:strokeColor="@color/colorPrimaryDark"
+            card_view:strokeWidth="2dp"
+            android:layout_marginTop="24dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/splash_bg"
+               >
+                <ImageView
+                    android:id="@+id/pdfimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    card_view:layout_constraintBottom_toTopOf="@id/pdfcat"
+                    android:background="@drawable/paper"
+                    />
+
+                <TextView
+                    android:padding="16dp"
+                    android:id="@+id/pdfcat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/playfair"
+                    android:text="Start Quiz"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    card_view:layout_constraintTop_toBottomOf="@id/pdfimg" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</FrameLayout>
