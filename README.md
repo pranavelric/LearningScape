@@ -1,9 +1,13 @@
 # LearningScape
 A quizz app made in android
 
+
+
+<a href="https://play.google.com/store/apps/details?id=com.quiz.learningscape">
+<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="200px">
+</a>
+
 ## Screenshots
-
-
 
 
 
